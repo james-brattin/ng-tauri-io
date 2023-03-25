@@ -17,4 +17,10 @@ export class TauriService {
     const text = await invoke('hello_world_command');
     console.log(text);
   }
+
+  async callReadJson() {
+    const text = await invoke('read_json');
+    console.log(text);
+    return text;
+  }
 }
