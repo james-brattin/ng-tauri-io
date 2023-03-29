@@ -1,0 +1,20 @@
+<ng-container *ngIf="vm$ | async as vm">
+  <ng-container *ngIf="vm.ready; else placeholder">
+    <section class="main">
+
+      <h2>User names</h2>
+      <ul>
+        <li *ngFor="let user of vm.users">
+          <span>{{user.name}}</span>
+        </li>
+      </ul>
+
+    </section>
+  </ng-container>
+</ng-container>
+
+<ng-template #placeholder>
+  <section class="main">
+      <section class="userlist-placeholder"></section>
+  </section>
+</ng-template>

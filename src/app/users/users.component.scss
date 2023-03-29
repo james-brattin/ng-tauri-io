@@ -1,0 +1,22 @@
+.main {
+  height: 50vh;
+}
+
+.userlist-placeholder {
+  height: 50vh;
+  background: slategray;
+  border-radius: 10px;
+  animation: loading 2.5s ease infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: .8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .8;
+  }
+}
